@@ -3,16 +3,14 @@
 # katz_deli array
 katz_deli = []
 
-message = ""
-
 #line
 def line(array)
-  if array.empty? == true
+  if array.empty? 
     puts "The line is currently empty."
   else
     message = "The line is currently:"
     array.each_with_index do |value, index|
-    message << " #{index + 1}. #{value}"
+      message << " #{index + 1}. #{value}"
     end
     puts message
   end
@@ -21,8 +19,7 @@ end
 #take_a_number
 def take_a_number(array, name)
     array << name
-    position =  array.find_index(name) + 1
-    puts "Welcome, #{name}. You are number #{position} in line."
+    puts "Welcome, #{name}. You are number #{array.length} in line."
 end
 
 #now_serving
