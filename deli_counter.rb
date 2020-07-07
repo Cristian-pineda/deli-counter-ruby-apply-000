@@ -7,7 +7,6 @@ message = ""
 
 #line
 def line(array)
-<<<<<<< HEAD
   if array.empty? == true
     puts "The line is currently empty."
   else
@@ -17,23 +16,6 @@ def line(array)
     end
     puts message
   end
-=======
-
-  if array.empty? == true
-    puts "The line is currently empty."
-  else
-
-    message = "The line is currently: "
-
-    array.each_with_index do |value, index|
-    message << "#{index + 1}. #{value} "
-    end
-
-    message
-
-  end
-
->>>>>>> abdc1d2b110e5589b104a5287da4218d4cd770b8
 end
 
 #take_a_number
